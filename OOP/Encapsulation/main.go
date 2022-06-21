@@ -1,16 +1,19 @@
-package Encapsulation
+package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/golearning/OOP/Encapsulation/models"
+)
 
 //Test function
-func Test() {
+func main() {
 	//STRUCTURE IDENTIFIER
-	p := &Person{
+	p := &models.Person{
 		Name: "test",
 		age:  21,
 	}
 	fmt.Println(p)
-	c := &company{}
+	c := &models.company{}
 	fmt.Println(c)
 
 	//STRUCTURE'S METHOD
@@ -22,12 +25,12 @@ func Test() {
 	fmt.Println(p.age)
 
 	//FUNCTION
-	person2 := GetPerson()
+	person2 := models.GetPerson()
 	fmt.Println(person2)
-	companyName := getCompanyName()
+	companyName := models.getCompanyName()
 	fmt.Println(companyName)
 
 	//VARIBLES
-	fmt.Println(companyLocation)
-	fmt.Println(CompanyName)
+	fmt.Println(models.companyLocation)
+	fmt.Println(models.CompanyName)
 }

@@ -1,4 +1,4 @@
-package Encapsulation
+package models
 
 import "fmt"
 
