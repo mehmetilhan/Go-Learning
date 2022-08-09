@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//Benzer sınıfların oluşturulmasında kolaylık sağlar.
+
 func main() {
 
 	bmw, _ := getCar("bmw")
